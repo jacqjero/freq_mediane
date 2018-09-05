@@ -7,6 +7,7 @@ Created on Fri Jul 13 10:34:09 2018
 
 from recomposition_spectrale import posttrait
 import numpy as np
+import pandas as pd
 
 # In[1] Chargement des input
 
@@ -38,6 +39,9 @@ for x in f.Fc:
     else:
         print('{0: >#5f}'. format(float(x))) 
                     
+## Sauvegarde
+writer = pd.ExcelWriter('frequence.xlsx')
+f.to_excel(writer,'Sheet1')
                     
                     
 
