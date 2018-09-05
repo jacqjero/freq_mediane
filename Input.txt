@@ -1,4 +1,4 @@
 fref = 1000
 fe = 20000
 fmin_bf = 20
-octbf = 3
+octbf = 6

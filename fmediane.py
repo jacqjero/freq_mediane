@@ -22,10 +22,10 @@ for st in datain:
     i += 1
     
     
-fref = num[0]
-fe = num[1]
-fmin_bf = num[2]
-octbf = num[3]
+fref = num[0]# frequence de référence pour le calcul des fréquences limites
+fe = num[1]# frequence d'échantillonnage
+fmin_bf = num[2]# frequence limite bf
+octbf = num[3]# valeur du filtre nième d'octave
 
 f = posttrait(fref,fe,fmin_bf,octbf)
 for x in f.Fc:
